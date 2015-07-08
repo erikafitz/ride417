@@ -13,6 +13,7 @@
 		8AF172DA1B4B6B2C00D85C1D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AF172D91B4B6B2C00D85C1D /* Images.xcassets */; };
 		8AF172DD1B4B6B2C00D85C1D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AF172DB1B4B6B2C00D85C1D /* LaunchScreen.xib */; };
 		8AF172E91B4B6B2C00D85C1D /* RIDE417Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF172E81B4B6B2C00D85C1D /* RIDE417Tests.swift */; };
+		8AF172F31B4C94E800D85C1D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AF172F21B4C94E800D85C1D /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		8AF172E21B4B6B2C00D85C1D /* RIDE417Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RIDE417Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF172E71B4B6B2C00D85C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF172E81B4B6B2C00D85C1D /* RIDE417Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RIDE417Tests.swift; sourceTree = "<group>"; };
+		8AF172F21B4C94E800D85C1D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF172F31B4C94E800D85C1D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +62,7 @@
 		8AF172C41B4B6B2C00D85C1D = {
 			isa = PBXGroup;
 			children = (
+				8AF172F21B4C94E800D85C1D /* MapKit.framework */,
 				8AF172CF1B4B6B2C00D85C1D /* RIDE417 */,
 				8AF172E51B4B6B2C00D85C1D /* RIDE417Tests */,
 				8AF172CE1B4B6B2C00D85C1D /* Products */,
@@ -161,6 +165,14 @@
 				TargetAttributes = {
 					8AF172CC1B4B6B2C00D85C1D = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					8AF172E11B4B6B2C00D85C1D = {
 						CreatedOnToolsVersion = 6.3.2;

@@ -15,6 +15,7 @@
 		20898DD11B52D5C0009DE1EA /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20898DCB1B52D5C0009DE1EA /* ParseUI.framework */; };
 		20898DD31B52D620009DE1EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20898DD21B52D620009DE1EA /* Foundation.framework */; };
 		20898DD61B52D692009DE1EA /* login.m in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD51B52D692009DE1EA /* login.m */; };
+		20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD71B538ABD009DE1EA /* RequestController.swift */; };
 		8AF172D31B4B6B2C00D85C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF172D21B4B6B2C00D85C1D /* AppDelegate.swift */; };
 		8AF172D51B4B6B2C00D85C1D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF172D41B4B6B2C00D85C1D /* ViewController.swift */; };
 		8AF172D81B4B6B2C00D85C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AF172D61B4B6B2C00D85C1D /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		20898DD21B52D620009DE1EA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		20898DD41B52D692009DE1EA /* RIDE417-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RIDE417-Bridging-Header.h"; sourceTree = "<group>"; };
 		20898DD51B52D692009DE1EA /* login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = login.m; sourceTree = "<group>"; };
+		20898DD71B538ABD009DE1EA /* RequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 		8AF172CD1B4B6B2C00D85C1D /* RIDE417.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIDE417.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AF172D11B4B6B2C00D85C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AF172D21B4B6B2C00D85C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				20898DD51B52D692009DE1EA /* login.m */,
 				8AF172D41B4B6B2C00D85C1D /* ViewController.swift */,
 				8AF172D61B4B6B2C00D85C1D /* Main.storyboard */,
+				20898DD71B538ABD009DE1EA /* RequestController.swift */,
 				8AF172D91B4B6B2C00D85C1D /* Images.xcassets */,
 				8AF172DB1B4B6B2C00D85C1D /* LaunchScreen.xib */,
 				8AF172D01B4B6B2C00D85C1D /* Supporting Files */,
@@ -324,6 +327,7 @@
 				20898DD61B52D692009DE1EA /* login.m in Sources */,
 				8AF172D51B4B6B2C00D85C1D /* ViewController.swift in Sources */,
 				8AF172D31B4B6B2C00D85C1D /* AppDelegate.swift in Sources */,
+				20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

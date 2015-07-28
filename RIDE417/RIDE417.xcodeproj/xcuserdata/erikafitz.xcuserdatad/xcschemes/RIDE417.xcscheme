@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8AF172CC1B4B6B2C00D85C1D"
+               BlueprintIdentifier = "8AC04C2D1B66695800EA7B1C"
                BuildableName = "RIDE417.app"
                BlueprintName = "RIDE417"
                ReferencedContainer = "container:RIDE417.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8AF172E11B4B6B2C00D85C1D"
+               BlueprintIdentifier = "8AC04C421B66695800EA7B1C"
                BuildableName = "RIDE417Tests.xctest"
                BlueprintName = "RIDE417Tests"
                ReferencedContainer = "container:RIDE417.xcodeproj">
@@ -46,7 +46,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8AF172E11B4B6B2C00D85C1D"
+               BlueprintIdentifier = "8AC04C421B66695800EA7B1C"
                BuildableName = "RIDE417Tests.xctest"
                BlueprintName = "RIDE417Tests"
                ReferencedContainer = "container:RIDE417.xcodeproj">
@@ -56,7 +56,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AF172CC1B4B6B2C00D85C1D"
+            BlueprintIdentifier = "8AC04C2D1B66695800EA7B1C"
             BuildableName = "RIDE417.app"
             BlueprintName = "RIDE417"
             ReferencedContainer = "container:RIDE417.xcodeproj">
@@ -76,7 +76,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AF172CC1B4B6B2C00D85C1D"
+            BlueprintIdentifier = "8AC04C2D1B66695800EA7B1C"
             BuildableName = "RIDE417.app"
             BlueprintName = "RIDE417"
             ReferencedContainer = "container:RIDE417.xcodeproj">
@@ -95,7 +95,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8AF172CC1B4B6B2C00D85C1D"
+            BlueprintIdentifier = "8AC04C2D1B66695800EA7B1C"
             BuildableName = "RIDE417.app"
             BlueprintName = "RIDE417"
             ReferencedContainer = "container:RIDE417.xcodeproj">

@@ -14,6 +14,7 @@ class RequestController: UIViewController {
     @IBOutlet var numPeopleTextField : UITextField!
     @IBOutlet var pickupTextField : UITextField!
     @IBOutlet var dropoffTextField : UITextField!
+    @IBOutlet var requestButton : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,11 @@ class RequestController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func viewTapped(sender : AnyObject) {
+    @IBAction func requestRide(sender : AnyObject) {
+        let name = nameTextField.text;
+        let number = numberTextField.text;
+        let numPeople = numPeopleTextField.text.toInt();
+        let pickupLoc = pickupTextField.text;
     }
     
 }

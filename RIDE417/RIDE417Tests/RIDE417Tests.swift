@@ -2,7 +2,7 @@
 //  RIDE417Tests.swift
 //  RIDE417Tests
 //
-//  Created by Erika Fitzpatrick on 7/6/15.
+//  Created by Erika Fitzpatrick on 7/27/15.
 //  Copyright (c) 2015 Erika Fitzpatrick. All rights reserved.
 //
 

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		20898DD61B52D692009DE1EA /* login.m in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD51B52D692009DE1EA /* login.m */; };
 		20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD71B538ABD009DE1EA /* RequestController.swift */; };
+		20898DDA1B676D9F009DE1EA /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD91B676D9F009DE1EA /* CommonUtil.swift */; };
 		8AC04C341B66695800EA7B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC04C331B66695800EA7B1C /* AppDelegate.swift */; };
 		8AC04C3B1B66695800EA7B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC04C3A1B66695800EA7B1C /* Images.xcassets */; };
 		8AC04C3E1B66695800EA7B1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC04C3C1B66695800EA7B1C /* LaunchScreen.xib */; };
@@ -32,7 +32,6 @@
 		8AC04C721B66BC5F00EA7B1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC04C6E1B66BC5F00EA7B1C /* SystemConfiguration.framework */; };
 		8AC04C751B66BC8000EA7B1C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC04C731B66BC8000EA7B1C /* libsqlite3.dylib */; };
 		8AC04C761B66BC8000EA7B1C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC04C741B66BC8000EA7B1C /* libz.dylib */; };
-		8AF172D31B4B6B2C00D85C1D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AF172D21B4B6B2C00D85C1D /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +46,8 @@
 
 /* Begin PBXFileReference section */
 		20898DD41B52D692009DE1EA /* RIDE417-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RIDE417-Bridging-Header.h"; sourceTree = "<group>"; };
-		20898DD51B52D692009DE1EA /* login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = login.m; sourceTree = "<group>"; };
 		20898DD71B538ABD009DE1EA /* RequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
+		20898DD91B676D9F009DE1EA /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
 		8AC04C2E1B66695800EA7B1C /* RIDE417.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIDE417.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC04C321B66695800EA7B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AC04C331B66695800EA7B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 		8AC04C6E1B66BC5F00EA7B1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		8AC04C731B66BC8000EA7B1C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8AC04C741B66BC8000EA7B1C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		8AF172D21B4B6B2C00D85C1D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8AF172D91B4B6B2C00D85C1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,8 +149,6 @@
 		8AC04C301B66695800EA7B1C /* RIDE417 */ = {
 			isa = PBXGroup;
 			children = (
-				8AF172D21B4B6B2C00D85C1D /* AppDelegate.swift */,
-				20898DD51B52D692009DE1EA /* login.m */,
 				20898DD71B538ABD009DE1EA /* RequestController.swift */,
 				8AF172D91B4B6B2C00D85C1D /* Images.xcassets */,
 				20898DD41B52D692009DE1EA /* RIDE417-Bridging-Header.h */,
@@ -163,6 +159,7 @@
 				8AC04C3C1B66695800EA7B1C /* LaunchScreen.xib */,
 				8AC04C311B66695800EA7B1C /* Supporting Files */,
 				8AC04C551B667A7900EA7B1C /* NewAccountViewController.swift */,
+				20898DD91B676D9F009DE1EA /* CommonUtil.swift */,
 			);
 			path = RIDE417;
 			sourceTree = "<group>";
@@ -292,12 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20898DD61B52D692009DE1EA /* login.m in Sources */,
-				8AF172D31B4B6B2C00D85C1D /* AppDelegate.swift in Sources */,
 				20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */,
 				8AC04C541B66766400EA7B1C /* ViewController.swift in Sources */,
 				8AC04C341B66695800EA7B1C /* AppDelegate.swift in Sources */,
 				8AC04C561B667A7900EA7B1C /* NewAccountViewController.swift in Sources */,
+				20898DDA1B676D9F009DE1EA /* CommonUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

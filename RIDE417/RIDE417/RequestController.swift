@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class RequestController: UIViewController {
     @IBOutlet var nameTextField : UITextField!
@@ -14,7 +15,6 @@ class RequestController: UIViewController {
     @IBOutlet var numPeopleTextField : UITextField!
     @IBOutlet var pickupTextField : UITextField!
     @IBOutlet var dropoffTextField : UITextField!
-    @IBOutlet var requestButton : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +27,36 @@ class RequestController: UIViewController {
     }
     
     @IBAction func requestRide(sender : AnyObject) {
-        let name = nameTextField.text;
-        let number = numberTextField.text;
-        let numPeople = numPeopleTextField.text.toInt();
-        let pickupLoc = pickupTextField.text;
+        let name = nameTextField.text
+        let number = numberTextField.text
+        let numPeople = numPeopleTextField.text
+        let pickupLoc = pickupTextField.text
+        let dropoffLoc = dropoffTextField.text
+        
+        if(name.isEmpty || number.isEmpty || numPeople.isEmpty || pickupLoc.isEmpty
+            || dropoffLoc.isEmpty) {
+            displayAlert("Invalid Request", "All fields are required.")
+            return
+        }
+        
+        var rideRequest = PFObject(className:"RideRequest")
+        rideRequest["name"] = nameTextField.text
+        rideRequest["number"] = numberTextField.text
+        if let numPeople = numPeopleTextField.text.toInt() {
+            rideRequest["numPeople"] = numPeople;
+        }
+        rideRequest["pickupLoc"] = pickupTextField.text;
+        rideRequest["dropoffLoc"] = dropoffTextField.text;
+        rideRequest.saveInBackgroundWithBlock {
+            (success: Bool, error: NSError?) -> Void in
+            if (success) {
+                displayAlert("Success!", "Request sent.")
+                return
+            } else {
+                displayAlert("Request failed", "Something went wrong.")
+                return
+            }
+        }
     }
     
 }

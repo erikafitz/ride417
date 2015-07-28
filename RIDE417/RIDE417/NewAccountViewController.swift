@@ -83,4 +83,7 @@ class NewAccountViewController: UIViewController {
         self.presentViewController(myAlert,  animated:true, completion:nil);
     }
     
+    @IBAction func backToLoginButton(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil);
+    }
 }

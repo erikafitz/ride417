@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD71B538ABD009DE1EA /* RequestController.swift */; };
 		20898DDA1B676D9F009DE1EA /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD91B676D9F009DE1EA /* CommonUtil.swift */; };
+		8A1F743B1B67CAE0004E08BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F743A1B67CAE0004E08BA /* LoginViewController.swift */; };
 		8AC04C341B66695800EA7B1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC04C331B66695800EA7B1C /* AppDelegate.swift */; };
 		8AC04C3B1B66695800EA7B1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AC04C3A1B66695800EA7B1C /* Images.xcassets */; };
 		8AC04C3E1B66695800EA7B1C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AC04C3C1B66695800EA7B1C /* LaunchScreen.xib */; };
@@ -48,6 +49,7 @@
 		20898DD41B52D692009DE1EA /* RIDE417-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RIDE417-Bridging-Header.h"; sourceTree = "<group>"; };
 		20898DD71B538ABD009DE1EA /* RequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 		20898DD91B676D9F009DE1EA /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
+		8A1F743A1B67CAE0004E08BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8AC04C2E1B66695800EA7B1C /* RIDE417.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RIDE417.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AC04C321B66695800EA7B1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AC04C331B66695800EA7B1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				8AC04C311B66695800EA7B1C /* Supporting Files */,
 				8AC04C551B667A7900EA7B1C /* NewAccountViewController.swift */,
 				20898DD91B676D9F009DE1EA /* CommonUtil.swift */,
+				8A1F743A1B67CAE0004E08BA /* LoginViewController.swift */,
 			);
 			path = RIDE417;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A1F743B1B67CAE0004E08BA /* LoginViewController.swift in Sources */,
 				20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */,
 				8AC04C541B66766400EA7B1C /* ViewController.swift in Sources */,
 				8AC04C341B66695800EA7B1C /* AppDelegate.swift in Sources */,

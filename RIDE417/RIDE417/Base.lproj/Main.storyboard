@@ -23,6 +23,15 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmI-zo-jv9">
+                                <rect key="frame" x="65" y="14" width="117" height="30"/>
+                                <state key="normal" title="logout for testing">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JIx-Sv-s5I"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -33,6 +42,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="249" y="241"/>
         </scene>
         <!--Request Controller-->
         <scene sceneID="gUW-Lo-BCP">
@@ -165,10 +175,10 @@
             </objects>
             <point key="canvasLocation" x="1267" y="233"/>
         </scene>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="Q81-2c-d8u">
             <objects>
-                <viewController id="W3p-G0-Zgn" sceneMemberID="viewController">
+                <viewController id="W3p-G0-Zgn" customClass="LoginViewController" customModule="RIDE417" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LhI-Ge-Yr6"/>
                         <viewControllerLayoutGuide type="bottom" id="Qmk-H1-Qbw"/>
@@ -212,6 +222,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" red="0.0" green="0.22878283299905489" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="W3p-G0-Zgn" eventType="touchUpInside" id="iE1-hC-JZn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-eW-MOC">
                                 <rect key="frame" x="85" y="383" width="150" height="30"/>
@@ -226,6 +239,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="emailAddress" destination="UQd-qE-JRy" id="D54-XB-Wjt"/>
+                        <outlet property="password" destination="wka-oh-hBk" id="D8p-VI-Bqn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2iv-hV-XpP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -314,6 +331,9 @@
                                 <state key="normal" title="I already have an account!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="backToLoginButton:" destination="UT4-xe-1z0" eventType="touchUpInside" id="Qnw-Ky-5SE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="st0-NR-Abp">
                                 <rect key="frame" x="70" y="405" width="180" height="30"/>

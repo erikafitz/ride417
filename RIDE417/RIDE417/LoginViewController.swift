@@ -26,16 +26,14 @@ class LoginViewController: UIViewController {
         let userEmail = emailAddress.text;
         let userPassword = password.text;
         
-        let userEmailStored = NSUserDefaults.standardUserDefaults().stringForKey("userEmail");
-        let userPasswordStored = NSUserDefaults.standardUserDefaults().stringForKey("userPassword");
         
         PFUser.logInWithUsernameInBackground(userEmail, password: userPassword, block: {(user, error) -> Void in
             if ((user) != nil) {
                 NSUserDefaults.standardUserDefaults().setBool(true, forKey: "isLoggedIn");
+                NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "userEmail");
+                NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "userPassword");
                 NSUserDefaults.standardUserDefaults().synchronize();
                 self.dismissViewControllerAnimated(true, completion: nil);
-                var alert = UIAlertView(title: "Success", message: "Logged In", delegate: self, cancelButtonTitle: "OK")
-                alert.show()
             }else {
                 var alert = UIAlertView(title: "Error", message: "Email and password combination does not exist.", delegate: self, cancelButtonTitle: "OK")
                 alert.show()

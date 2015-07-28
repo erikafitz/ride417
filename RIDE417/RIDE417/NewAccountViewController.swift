@@ -84,6 +84,6 @@ class NewAccountViewController: UIViewController {
     }
     
     @IBAction func backToLoginButton(sender: AnyObject) {
-        self.dismissViewControllerAnimated(true, completion: nil);
+        
     }
 }

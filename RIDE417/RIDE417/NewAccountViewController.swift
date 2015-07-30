@@ -51,9 +51,6 @@ class NewAccountViewController: UIViewController {
         }
         
         //store new user
-        NSUserDefaults.standardUserDefaults().setObject(userEmail, forKey: "username");
-        NSUserDefaults.standardUserDefaults().setObject(userPassword, forKey: "password");
-        NSUserDefaults.standardUserDefaults().synchronize();
         var user = PFUser();
         user.username = userEmail;
         user.password = userPassword;

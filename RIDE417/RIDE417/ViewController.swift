@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class ViewController: UIViewController {
 
@@ -21,17 +22,17 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(animated: Bool) {
-        let isLoggedIn = NSUserDefaults.standardUserDefaults().boolForKey("isLoggedIn");
-        if(!isLoggedIn){
+        let isLoggedIn = PFUser.currentUser()?.isAuthenticated();
+        if(isLoggedIn==nil || isLoggedIn==false){
             self.performSegueWithIdentifier("loginView", sender:self);
         }
     }
 
     @IBAction func logoutButton(sender: AnyObject) {
         //logout for testing purposes
-        NSUserDefaults.standardUserDefaults().setBool(false, forKey: "isLoggedIn");
-        NSUserDefaults.standardUserDefaults().synchronize();
-        self.performSegueWithIdentifier("loginView", sender: self);
+        PFUser.logOutInBackgroundWithBlock({(_) -> Void in
+            self.performSegueWithIdentifier("loginView", sender: self);
+        })
     }
 
 }

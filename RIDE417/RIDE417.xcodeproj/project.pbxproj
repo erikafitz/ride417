@@ -33,6 +33,12 @@
 		8AC04C721B66BC5F00EA7B1C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC04C6E1B66BC5F00EA7B1C /* SystemConfiguration.framework */; };
 		8AC04C751B66BC8000EA7B1C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC04C731B66BC8000EA7B1C /* libsqlite3.dylib */; };
 		8AC04C761B66BC8000EA7B1C /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC04C741B66BC8000EA7B1C /* libz.dylib */; };
+		8AF2310A1B855526006322C9 /* White Checkers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8AF231091B855526006322C9 /* White Checkers.jpg */; };
+		8AF2310C1B8559CB006322C9 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF2310B1B8559CB006322C9 /* logo.png */; };
+		8AF2310E1B855E9C006322C9 /* email icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF2310D1B855E9C006322C9 /* email icon.png */; };
+		8AF231101B855F73006322C9 /* password icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF2310F1B855F73006322C9 /* password icon.png */; };
+		8AF231121B85608B006322C9 /* user icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF231111B85608B006322C9 /* user icon.png */; };
+		8AF231141B8560B0006322C9 /* phone icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AF231131B8560B0006322C9 /* phone icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +84,12 @@
 		8AC04C731B66BC8000EA7B1C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		8AC04C741B66BC8000EA7B1C /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		8AF172D91B4B6B2C00D85C1D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8AF231091B855526006322C9 /* White Checkers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "White Checkers.jpg"; sourceTree = "<group>"; };
+		8AF2310B1B8559CB006322C9 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8AF2310D1B855E9C006322C9 /* email icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "email icon.png"; sourceTree = "<group>"; };
+		8AF2310F1B855F73006322C9 /* password icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "password icon.png"; sourceTree = "<group>"; };
+		8AF231111B85608B006322C9 /* user icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "user icon.png"; sourceTree = "<group>"; };
+		8AF231131B8560B0006322C9 /* phone icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "phone icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +175,12 @@
 				8AC04C551B667A7900EA7B1C /* NewAccountViewController.swift */,
 				20898DD91B676D9F009DE1EA /* CommonUtil.swift */,
 				8A1F743A1B67CAE0004E08BA /* LoginViewController.swift */,
+				8AF231091B855526006322C9 /* White Checkers.jpg */,
+				8AF2310B1B8559CB006322C9 /* logo.png */,
+				8AF231131B8560B0006322C9 /* phone icon.png */,
+				8AF231111B85608B006322C9 /* user icon.png */,
+				8AF2310F1B855F73006322C9 /* password icon.png */,
+				8AF2310D1B855E9C006322C9 /* email icon.png */,
 			);
 			path = RIDE417;
 			sourceTree = "<group>";
@@ -272,9 +290,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AF231121B85608B006322C9 /* user icon.png in Resources */,
+				8AF231101B855F73006322C9 /* password icon.png in Resources */,
 				8AC04C531B6673F800EA7B1C /* Main.storyboard in Resources */,
+				8AF2310C1B8559CB006322C9 /* logo.png in Resources */,
+				8AF2310E1B855E9C006322C9 /* email icon.png in Resources */,
 				8AC04C3E1B66695800EA7B1C /* LaunchScreen.xib in Resources */,
+				8AF2310A1B855526006322C9 /* White Checkers.jpg in Resources */,
 				8AC04C3B1B66695800EA7B1C /* Images.xcassets in Resources */,
+				8AF231141B8560B0006322C9 /* phone icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

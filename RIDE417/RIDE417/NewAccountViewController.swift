@@ -10,12 +10,13 @@ import UIKit
 import Parse
 
 class NewAccountViewController: UIViewController {
-    @IBOutlet var firstName: UITextField!
-    @IBOutlet var lastName: UITextField!
+
     @IBOutlet var phoneNumber: UITextField!
     @IBOutlet var emailAddress: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var passwordConfirmation: UITextField!
+    @IBOutlet var name: UITextField!
+    @IBOutlet var phone: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,8 @@ class NewAccountViewController: UIViewController {
         let userEmail = emailAddress.text;
         let userPassword = password.text;
         let userPWConfirm = passwordConfirmation.text;
+        let userName = name.text;
+        let userPhone = phone.text;
         
         //check for empty fields
         if(userEmail.isEmpty || userPassword.isEmpty || userPWConfirm.isEmpty){
@@ -55,6 +58,16 @@ class NewAccountViewController: UIViewController {
         user.username = userEmail;
         user.password = userPassword;
         user.email = userEmail;
+        if(!(userEmail.rangeOfString("@missouristate.edu")==nil)){
+            user.setObject("Missouri State University", forKey: "school");
+        }else if(!(userEmail.rangeOfString("@evangel.edu")==nil)){
+            user.setObject("Evangel University", forKey: "school");
+        }else{
+            user.setObject("unknown", forKey: "school");
+        }
+        user.setObject(false, forKey: "driver");
+        user.setObject(userPhone, forKey: "number");
+        user.setObject(userName , forKey: "name");
         user.signUpInBackgroundWithBlock { (succeeded, error) -> Void in
             if error == nil {
                 //alert

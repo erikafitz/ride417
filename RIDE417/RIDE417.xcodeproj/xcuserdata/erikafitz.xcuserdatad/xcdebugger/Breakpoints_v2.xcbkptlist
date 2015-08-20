@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "RIDE417/NewAccountViewController.swift"
-            timestampString = "459720618.811838"
+            timestampString = "461722398.301462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "61"
-            endingLineNumber = "61"
+            startingLineNumber = "74"
+            endingLineNumber = "74"
             landmarkName = "createAccountButton(_:)"
             landmarkType = "5">
          </BreakpointContent>

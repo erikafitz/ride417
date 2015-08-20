@@ -18,6 +18,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         outlineButton(createButton, logoPurple);
+        setPlaceholder(emailAddress, "email address", lightPurple);
+        setPlaceholder(password, "password", lightPurple);
     }
     
     override func didReceiveMemoryWarning() {

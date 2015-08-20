@@ -28,3 +28,8 @@ func outlineButton(button: UIButton, color: UIColor) {
     button.layer.borderColor = color.CGColor;
     button.layer.cornerRadius = 0;
 }
+
+func setPlaceholder(textField: UITextField, text: String, color: UIColor) {
+    textField.attributedPlaceholder = NSAttributedString(string: text,
+        attributes:[NSForegroundColorAttributeName: color]);
+}

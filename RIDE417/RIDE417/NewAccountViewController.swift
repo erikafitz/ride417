@@ -9,6 +9,7 @@
 import UIKit
 import Parse
 
+
 class NewAccountViewController: UIViewController {
 
     @IBOutlet var phoneNumber: UITextField!
@@ -17,9 +18,11 @@ class NewAccountViewController: UIViewController {
     @IBOutlet var passwordConfirmation: UITextField!
     @IBOutlet var name: UITextField!
     @IBOutlet var phone: UITextField!
+    @IBOutlet var backButton: UIButton!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        outlineButton(backButton, logoPurple);
     }
     
     override func didReceiveMemoryWarning() {
@@ -94,6 +97,6 @@ class NewAccountViewController: UIViewController {
     }
     
     @IBAction func backToLoginButton(sender: AnyObject) {
-        
+        self.dismissViewControllerAnimated(true, completion: nil);
     }
 }

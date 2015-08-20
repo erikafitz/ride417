@@ -13,9 +13,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var emailAddress: UITextField!
     @IBOutlet var password: UITextField!
+    @IBOutlet var createButton: UIButton!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        outlineButton(createButton, logoPurple);
     }
     
     override func didReceiveMemoryWarning() {

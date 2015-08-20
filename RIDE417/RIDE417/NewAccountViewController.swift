@@ -12,7 +12,6 @@ import Parse
 
 class NewAccountViewController: UIViewController {
 
-    @IBOutlet var phoneNumber: UITextField!
     @IBOutlet var emailAddress: UITextField!
     @IBOutlet var password: UITextField!
     @IBOutlet var passwordConfirmation: UITextField!
@@ -23,6 +22,11 @@ class NewAccountViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         outlineButton(backButton, logoPurple);
+        setPlaceholder(emailAddress, "email address", lightPurple);
+        setPlaceholder(password, "password", lightPurple);
+        setPlaceholder(passwordConfirmation, "confirm password", lightPurple);
+        setPlaceholder(phone, "phone number", lightPurple);
+        setPlaceholder(name, "name", lightPurple);
     }
     
     override func didReceiveMemoryWarning() {

@@ -27,6 +27,11 @@ class NewAccountViewController: UIViewController {
         setPlaceholder(passwordConfirmation, "confirm password", lightPurple);
         setPlaceholder(phone, "phone number", lightPurple);
         setPlaceholder(name, "name", lightPurple);
+        underlineTextField(emailAddress, darkPurple);
+        underlineTextField(password, darkPurple);
+        underlineTextField(phone, darkPurple);
+        underlineTextField(passwordConfirmation, darkPurple);
+        underlineTextField(name, darkPurple);
     }
     
     override func didReceiveMemoryWarning() {

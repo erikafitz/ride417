@@ -17,9 +17,12 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
+        self.view.layoutMargins = UIEdgeInsetsMake(10, 10, 10, 10);
         outlineButton(createButton, logoPurple);
         setPlaceholder(emailAddress, "email address", lightPurple);
         setPlaceholder(password, "password", lightPurple);
+        underlineTextField(emailAddress, darkPurple);
+        underlineTextField(password, darkPurple);
     }
     
     override func didReceiveMemoryWarning() {

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -186,7 +187,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="White Checkers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XY7-Q5-DBx">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="White Checkers.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="XY7-Q5-DBx">
                                 <rect key="frame" x="-230" y="-1" width="830" height="602"/>
                                 <variation key="heightClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="-230" y="-1" width="1018" height="801"/>
@@ -204,7 +205,7 @@
                                     <rect key="frame" x="-218" y="0.0" width="1018" height="802"/>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email address" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-qE-JRy">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="email address" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="UQd-qE-JRy">
                                 <rect key="frame" x="98" y="262" width="482" height="30"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -230,8 +231,12 @@
                                     <rect key="frame" x="120" y="329" width="644" height="30"/>
                                 </variation>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="email icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="JTK-iw-kFz">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="email icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="JTK-iw-kFz">
                                 <rect key="frame" x="20" y="242" width="70" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="2CK-a7-FZH"/>
+                                    <constraint firstAttribute="height" constant="70" id="7CS-HU-lRx"/>
+                                </constraints>
                                 <variation key="heightClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="113" width="57" height="57"/>
                                 </variation>
@@ -254,7 +259,7 @@
                                     <rect key="frame" x="42" y="309" width="70" height="70"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="password icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-Xf-Z3S">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="password icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="xjy-Xf-Z3S">
                                 <rect key="frame" x="20" y="329" width="70" height="70"/>
                                 <variation key="heightClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="186" width="57" height="57"/>
@@ -278,7 +283,7 @@
                                     <rect key="frame" x="42" y="400" width="70" height="70"/>
                                 </variation>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wka-oh-hBk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" minimumFontSize="18" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="wka-oh-hBk">
                                 <rect key="frame" x="98" y="349" width="482" height="30"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -304,7 +309,7 @@
                                     <rect key="frame" x="120" y="420" width="644" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3P-Xp-Fg8">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X3P-Xp-Fg8">
                                 <rect key="frame" x="20" y="420" width="560" height="60"/>
                                 <color key="backgroundColor" red="0.54509803921568623" green="0.25098039215686274" blue="0.75294117647058822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Medium" family="Heiti TC" pointSize="25"/>
@@ -338,8 +343,11 @@
                                     <action selector="loginButton:" destination="W3p-G0-Zgn" eventType="touchUpInside" id="iE1-hC-JZn"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-bH-SSg">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysi-bH-SSg">
                                 <rect key="frame" x="7" y="-1" width="587" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="269" id="6O6-KA-J8F"/>
+                                </constraints>
                                 <variation key="heightClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="20" y="-1" width="254" height="118"/>
                                 </variation>
@@ -362,7 +370,7 @@
                                     <rect key="frame" x="25" y="-22" width="750" height="390"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-eW-MOC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sqI-eW-MOC">
                                 <rect key="frame" x="20" y="488" width="560" height="60"/>
                                 <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="18"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -397,6 +405,32 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ysi-bH-SSg" firstAttribute="leading" secondItem="WMS-Sv-HVh" secondAttribute="leadingMargin" constant="-9" id="Ayr-vW-VaN"/>
+                            <constraint firstItem="X3P-Xp-Fg8" firstAttribute="width" secondItem="sqI-eW-MOC" secondAttribute="width" id="C3V-wX-LKd"/>
+                            <constraint firstAttribute="centerX" secondItem="ysi-bH-SSg" secondAttribute="centerX" id="CMx-cp-DPx"/>
+                            <constraint firstItem="ysi-bH-SSg" firstAttribute="leading" secondItem="WMS-Sv-HVh" secondAttribute="leading" constant="7" id="GPg-8k-KVF"/>
+                            <constraint firstItem="JTK-iw-kFz" firstAttribute="centerY" secondItem="UQd-qE-JRy" secondAttribute="centerY" id="GgR-6S-4fU"/>
+                            <constraint firstItem="JTK-iw-kFz" firstAttribute="centerX" secondItem="xjy-Xf-Z3S" secondAttribute="centerX" id="LUJ-T6-9ru"/>
+                            <constraint firstItem="ysi-bH-SSg" firstAttribute="top" secondItem="XY7-Q5-DBx" secondAttribute="top" id="PsY-68-idi"/>
+                            <constraint firstAttribute="centerX" secondItem="sqI-eW-MOC" secondAttribute="centerX" id="Qdu-ct-aKc"/>
+                            <constraint firstItem="X3P-Xp-Fg8" firstAttribute="height" secondItem="sqI-eW-MOC" secondAttribute="height" id="UVW-QJ-9ax"/>
+                            <constraint firstItem="xjy-Xf-Z3S" firstAttribute="top" secondItem="ysi-bH-SSg" secondAttribute="bottom" constant="61" id="aMs-Wo-cz4"/>
+                            <constraint firstItem="JTK-iw-kFz" firstAttribute="height" secondItem="xjy-Xf-Z3S" secondAttribute="height" id="dL4-W7-cC6"/>
+                            <constraint firstAttribute="trailing" secondItem="UQd-qE-JRy" secondAttribute="trailing" constant="20" id="eaq-Wb-oU8"/>
+                            <constraint firstAttribute="centerX" secondItem="X3P-Xp-Fg8" secondAttribute="centerX" id="fcs-a2-6rT"/>
+                            <constraint firstAttribute="trailing" secondItem="sqI-eW-MOC" secondAttribute="trailing" constant="20" id="gCW-kJ-Qa4"/>
+                            <constraint firstItem="ysi-bH-SSg" firstAttribute="top" secondItem="WMS-Sv-HVh" secondAttribute="top" constant="-1" id="iar-LD-R3B"/>
+                            <constraint firstAttribute="trailing" secondItem="X3P-Xp-Fg8" secondAttribute="trailing" constant="20" id="igS-Bl-hh1"/>
+                            <constraint firstAttribute="trailing" secondItem="wka-oh-hBk" secondAttribute="trailing" constant="20" id="iuV-BT-KE1"/>
+                            <constraint firstItem="ysi-bH-SSg" firstAttribute="top" secondItem="WMS-Sv-HVh" secondAttribute="topMargin" constant="-1" id="jfM-4o-csQ"/>
+                            <constraint firstItem="JTK-iw-kFz" firstAttribute="width" secondItem="xjy-Xf-Z3S" secondAttribute="width" id="lJm-Cg-Sve"/>
+                            <constraint firstAttribute="centerY" secondItem="X3P-Xp-Fg8" secondAttribute="centerY" constant="-150" id="tav-1J-j6S"/>
+                            <constraint firstAttribute="centerY" secondItem="sqI-eW-MOC" secondAttribute="centerY" constant="-218" id="tfh-50-1pQ"/>
+                            <constraint firstItem="X3P-Xp-Fg8" firstAttribute="width" secondItem="sqI-eW-MOC" secondAttribute="height" multiplier="28:3" id="tsS-8E-AEK"/>
+                            <constraint firstItem="UQd-qE-JRy" firstAttribute="centerX" secondItem="wka-oh-hBk" secondAttribute="centerX" id="yeN-le-gha"/>
+                            <constraint firstAttribute="trailing" secondItem="ysi-bH-SSg" secondAttribute="trailing" constant="6" id="zu8-Ol-oar"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="createButton" destination="sqI-eW-MOC" id="EOX-mQ-aBi"/>

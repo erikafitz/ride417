@@ -16,7 +16,7 @@ class RequestController: UIViewController {
     @IBOutlet var pickupTextField : UITextField!
     @IBOutlet var dropoffTextField : UITextField!
     
-    var requestID : String = ""
+    var requestId : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,16 @@ class RequestController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+    /* override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
+        
+    } */
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let svc = segue.destinationViewController as! ViewRequestController
+        svc.requestId = requestId
+    }
+    
+    @IBAction func sendRequest(sender: UIButton) {
         let name = nameTextField.text
         let number = numberTextField.text
         let numPeople = numPeopleTextField.text
@@ -38,13 +47,8 @@ class RequestController: UIViewController {
         if(name!.isEmpty || number!.isEmpty || numPeople!.isEmpty || pickupLoc!.isEmpty
             || dropoffLoc!.isEmpty) {
                 displayAlert("Invalid Request", msg: "All fields are required.")
-                return false
+                return
         }
-        return true
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        let svc = segue.destinationViewController as! ViewRequestController
         let rideRequest = PFObject(className:"RideRequest")
         rideRequest["name"] = nameTextField.text
         rideRequest["number"] = numberTextField.text
@@ -54,13 +58,14 @@ class RequestController: UIViewController {
         rideRequest["pickupLoc"] = pickupTextField.text
         rideRequest["dropoffLoc"] = dropoffTextField.text
         rideRequest["progress"] = "unassigned"
-        svc.rideRequest = rideRequest
         
         rideRequest.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             // TODO: remove alerts when no longer needed for debugging
             if (success) {
                 displayAlert("Success!", msg: "Request sent.")
+                self.requestId = rideRequest.objectId!
+                self.performSegueWithIdentifier("requestSegue", sender: self)
                 return
             } else {
                 displayAlert("Request failed", msg: "Something went wrong.")

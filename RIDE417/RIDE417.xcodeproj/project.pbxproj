@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2012D6D51C35B6FD00D4E049 /* map icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 2012D6D41C35B6FD00D4E049 /* map icon.png */; };
+		2012D6D71C35B92800D4E049 /* Know More_People.png in Resources */ = {isa = PBXBuildFile; fileRef = 2012D6D61C35B92800D4E049 /* Know More_People.png */; };
+		2012D6D91C35CAAD00D4E049 /* ViewRequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012D6D81C35CAAD00D4E049 /* ViewRequestController.swift */; };
 		20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD71B538ABD009DE1EA /* RequestController.swift */; };
 		20898DDA1B676D9F009DE1EA /* CommonUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20898DD91B676D9F009DE1EA /* CommonUtil.swift */; };
 		8A1F743B1B67CAE0004E08BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A1F743A1B67CAE0004E08BA /* LoginViewController.swift */; };
@@ -52,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2012D6D41C35B6FD00D4E049 /* map icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "map icon.png"; sourceTree = "<group>"; };
+		2012D6D61C35B92800D4E049 /* Know More_People.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Know More_People.png"; sourceTree = "<group>"; };
+		2012D6D81C35CAAD00D4E049 /* ViewRequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRequestController.swift; sourceTree = "<group>"; };
 		20898DD41B52D692009DE1EA /* RIDE417-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RIDE417-Bridging-Header.h"; sourceTree = "<group>"; };
 		20898DD71B538ABD009DE1EA /* RequestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestController.swift; sourceTree = "<group>"; };
 		20898DD91B676D9F009DE1EA /* CommonUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonUtil.swift; sourceTree = "<group>"; };
@@ -169,6 +175,9 @@
 				8AC04C331B66695800EA7B1C /* AppDelegate.swift */,
 				8AC04C351B66695800EA7B1C /* ViewController.swift */,
 				8AC04C371B66695800EA7B1C /* Main.storyboard */,
+				2012D6D81C35CAAD00D4E049 /* ViewRequestController.swift */,
+				2012D6D61C35B92800D4E049 /* Know More_People.png */,
+				2012D6D41C35B6FD00D4E049 /* map icon.png */,
 				8AC04C3A1B66695800EA7B1C /* Images.xcassets */,
 				8AC04C3C1B66695800EA7B1C /* LaunchScreen.xib */,
 				8AC04C311B66695800EA7B1C /* Supporting Files */,
@@ -254,6 +263,7 @@
 		8AC04C261B66695800EA7B1C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Erika Fitzpatrick";
 				TargetAttributes = {
@@ -293,7 +303,9 @@
 				8AF231121B85608B006322C9 /* user icon.png in Resources */,
 				8AF231101B855F73006322C9 /* password icon.png in Resources */,
 				8AC04C531B6673F800EA7B1C /* Main.storyboard in Resources */,
+				2012D6D71C35B92800D4E049 /* Know More_People.png in Resources */,
 				8AF2310C1B8559CB006322C9 /* logo.png in Resources */,
+				2012D6D51C35B6FD00D4E049 /* map icon.png in Resources */,
 				8AF2310E1B855E9C006322C9 /* email icon.png in Resources */,
 				8AC04C3E1B66695800EA7B1C /* LaunchScreen.xib in Resources */,
 				8AF2310A1B855526006322C9 /* White Checkers.jpg in Resources */,
@@ -316,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2012D6D91C35CAAD00D4E049 /* ViewRequestController.swift in Sources */,
 				8A1F743B1B67CAE0004E08BA /* LoginViewController.swift in Sources */,
 				20898DD81B538ABD009DE1EA /* RequestController.swift in Sources */,
 				8AC04C541B66766400EA7B1C /* ViewController.swift in Sources */,

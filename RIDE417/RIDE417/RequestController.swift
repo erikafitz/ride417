@@ -16,6 +16,8 @@ class RequestController: UIViewController {
     @IBOutlet var pickupTextField : UITextField!
     @IBOutlet var dropoffTextField : UITextField!
     
+    var requestID : String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -26,37 +28,44 @@ class RequestController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func requestRide(sender : AnyObject) {
+    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
         let name = nameTextField.text
         let number = numberTextField.text
         let numPeople = numPeopleTextField.text
         let pickupLoc = pickupTextField.text
         let dropoffLoc = dropoffTextField.text
         
-        if(name.isEmpty || number.isEmpty || numPeople.isEmpty || pickupLoc.isEmpty
-            || dropoffLoc.isEmpty) {
-            displayAlert("Invalid Request", "All fields are required.")
-            return
+        if(name!.isEmpty || number!.isEmpty || numPeople!.isEmpty || pickupLoc!.isEmpty
+            || dropoffLoc!.isEmpty) {
+                displayAlert("Invalid Request", msg: "All fields are required.")
+                return false
         }
-        
-        var rideRequest = PFObject(className:"RideRequest")
+        return true
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        let svc = segue.destinationViewController as! ViewRequestController
+        let rideRequest = PFObject(className:"RideRequest")
         rideRequest["name"] = nameTextField.text
         rideRequest["number"] = numberTextField.text
-        if let numPeople = numPeopleTextField.text.toInt() {
+        if let numPeople = Int(numPeopleTextField.text!) {
             rideRequest["numPeople"] = numPeople;
         }
         rideRequest["pickupLoc"] = pickupTextField.text;
         rideRequest["dropoffLoc"] = dropoffTextField.text;
+        svc.rideRequest = rideRequest
+        
         rideRequest.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
+            // TODO: remove alerts when no longer needed for debugging
             if (success) {
-                displayAlert("Success!", "Request sent.")
+                displayAlert("Success!", msg: "Request sent.")
                 return
             } else {
-                displayAlert("Request failed", "Something went wrong.")
+                displayAlert("Request failed", msg: "Something went wrong.")
                 return
             }
         }
+        
     }
-    
 }

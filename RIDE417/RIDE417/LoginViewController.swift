@@ -18,11 +18,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         self.view.layoutMargins = UIEdgeInsetsMake(10, 10, 10, 10);
-        outlineButton(createButton, logoPurple);
-        setPlaceholder(emailAddress, "email address", lightPurple);
-        setPlaceholder(password, "password", lightPurple);
-        underlineTextField(emailAddress, darkPurple);
-        underlineTextField(password, darkPurple);
+        outlineButton(createButton, color:logoPurple);
+        setPlaceholder(emailAddress, text: "email address", color: lightPurple);
+        setPlaceholder(password, text: "password", color: lightPurple);
+        underlineTextField(emailAddress, color: darkPurple);
+        underlineTextField(password, color: darkPurple);
     }
     
     override func didReceiveMemoryWarning() {
@@ -34,11 +34,11 @@ class LoginViewController: UIViewController {
         let userPassword = password.text;
         
         
-        PFUser.logInWithUsernameInBackground(userEmail, password: userPassword, block: {(user, error) -> Void in
+        PFUser.logInWithUsernameInBackground(userEmail!, password: userPassword!, block: {(user, error) -> Void in
             if ((user) != nil) {
                 self.dismissViewControllerAnimated(true, completion: nil);
             }else {
-                var alert = UIAlertView(title: "Error", message: "Email and password combination does not exist.", delegate: self, cancelButtonTitle: "OK")
+                let alert = UIAlertView(title: "Error", message: "Email and password combination does not exist.", delegate: self, cancelButtonTitle: "OK")
                 alert.show()
             }
         })

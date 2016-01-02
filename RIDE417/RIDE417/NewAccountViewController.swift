@@ -21,17 +21,17 @@ class NewAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad();
-        outlineButton(backButton, logoPurple);
-        setPlaceholder(emailAddress, "email address", lightPurple);
-        setPlaceholder(password, "password", lightPurple);
-        setPlaceholder(passwordConfirmation, "confirm password", lightPurple);
-        setPlaceholder(phone, "phone number", lightPurple);
-        setPlaceholder(name, "name", lightPurple);
-        underlineTextField(emailAddress, darkPurple);
-        underlineTextField(password, darkPurple);
-        underlineTextField(phone, darkPurple);
-        underlineTextField(passwordConfirmation, darkPurple);
-        underlineTextField(name, darkPurple);
+        outlineButton(backButton, color: logoPurple);
+        setPlaceholder(emailAddress, text: "email address", color: lightPurple);
+        setPlaceholder(password, text: "password", color: lightPurple);
+        setPlaceholder(passwordConfirmation, text: "confirm password", color: lightPurple);
+        setPlaceholder(phone, text: "phone number", color: lightPurple);
+        setPlaceholder(name, text: "name", color: lightPurple);
+        underlineTextField(emailAddress, color: darkPurple);
+        underlineTextField(password, color: darkPurple);
+        underlineTextField(phone, color: darkPurple);
+        underlineTextField(passwordConfirmation, color: darkPurple);
+        underlineTextField(name, color: darkPurple);
     }
     
     override func didReceiveMemoryWarning() {
@@ -46,14 +46,14 @@ class NewAccountViewController: UIViewController {
         let userPhone = phone.text;
         
         //check for empty fields
-        if(userEmail.isEmpty || userPassword.isEmpty || userPWConfirm.isEmpty){
+        if(userEmail!.isEmpty || userPassword!.isEmpty || userPWConfirm!.isEmpty){
             //display alert
             displayMyAlertMessage("All fields are required.");
             return;
         }
         
         //check for valid .edu email
-        if(userEmail.rangeOfString("@")==nil || userEmail.rangeOfString(".edu")==nil){
+        if(userEmail!.rangeOfString("@")==nil || userEmail!.rangeOfString(".edu")==nil){
             //display alert
             displayMyAlertMessage("Please use a valid .edu email address.");
         }
@@ -70,16 +70,16 @@ class NewAccountViewController: UIViewController {
         user.username = userEmail;
         user.password = userPassword;
         user.email = userEmail;
-        if(!(userEmail.rangeOfString("@missouristate.edu")==nil)){
+        if(!(userEmail!.rangeOfString("@missouristate.edu")==nil)){
             user.setObject("Missouri State University", forKey: "school");
-        }else if(!(userEmail.rangeOfString("@evangel.edu")==nil)){
+        }else if(!(userEmail!.rangeOfString("@evangel.edu")==nil)){
             user.setObject("Evangel University", forKey: "school");
         }else{
             user.setObject("unknown", forKey: "school");
         }
         user.setObject(false, forKey: "driver");
-        user.setObject(userPhone, forKey: "number");
-        user.setObject(userName , forKey: "name");
+        user.setObject(userPhone!, forKey: "number");
+        user.setObject(userName!, forKey: "name");
         user.signUpInBackgroundWithBlock { (succeeded, error) -> Void in
             if error == nil {
                 //alert
@@ -91,7 +91,7 @@ class NewAccountViewController: UIViewController {
                 self.presentViewController(myAlert,  animated:true, completion:nil);
             } else {
                 self.displayMyAlertMessage("Invalid entry. Please double check the form and try again.");
-                println("\(error)");
+                print("\(error)");
                 // Show the errorString somewhere and let the user try again.
             }
         }

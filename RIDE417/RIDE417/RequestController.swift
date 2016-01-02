@@ -51,8 +51,9 @@ class RequestController: UIViewController {
         if let numPeople = Int(numPeopleTextField.text!) {
             rideRequest["numPeople"] = numPeople;
         }
-        rideRequest["pickupLoc"] = pickupTextField.text;
-        rideRequest["dropoffLoc"] = dropoffTextField.text;
+        rideRequest["pickupLoc"] = pickupTextField.text
+        rideRequest["dropoffLoc"] = dropoffTextField.text
+        rideRequest["progress"] = "unassigned"
         svc.rideRequest = rideRequest
         
         rideRequest.saveInBackgroundWithBlock {
@@ -66,6 +67,5 @@ class RequestController: UIViewController {
                 return
             }
         }
-        
     }
 }
